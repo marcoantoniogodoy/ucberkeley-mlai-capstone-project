@@ -1,6 +1,6 @@
-### Let's make it a hit song!
+# Capstone Project: Let's make it a hit song!
 
-**Marco Antonio Godoy**
+**By Marco Antonio Godoy**
 
 #### Executive summary
 For more than 20 years, I've been actively and passively involved in the highly competitive music industry, in roles related to music production, engineering, composition, songwriting, performance and consulting. I've had the opportunity to work with many artists from different nationalities, styles and backgrounds, in a wide array of projects, from collaborations (aka "no money") to fully funded productions backed by major record labels. Over the years, I've witnessed how some of these artists have achieved international recognition, while others have not been able to grow their local niche audiences. Surprisingly, the financial support that major labels provide to their artists doesn't always translate into successful acts. In fact, by leveraging the power of social media, some independent artists have been able to grow bigger audiences than some of their counterparts, even with much smaller marketing budgets. Moreover, I've noticed how fans seem to favor the charisma and big persona of some artists over the exceptional talent of others. However, one crucial differentiator between those who "make it" in the music business and those who don't is that behind every successful artist there's always a "hit" (top played) song. Therefore, I find in this capstone project the perfect opportunity to leverage AI/ML techniques with the goal of identifying the  qualities and attributes that make a song a "hit".  
@@ -28,16 +28,38 @@ Based on the research question, the goal of the analysis is to build a model tha
 At this point, the problem will become a binary classification problem. Therefore, the analysis will leverage data classification models such as Logistic Regression, K-Nearest, Support Vector Machines and Decision Trees.  
 
 #### Results
-What did your research find?
+During the data modeling phase the following results were obtained:
+<ul>
+    <li>
+        As per training time, the best performing model was the KNN (aside from the Dummy Classifier), followed by the logistic regression model.
+    </li>
+    <li>
+        As it relates to test accuracy and precision, the best results were produced by the Decision Tree classifier, followed by the Logistic Regression model. 
+    </li>
+    <li>
+        In regards to recall, KNN and SVM obtained a perfect score of 1. However, this might be an indication of overfitting. Therefore, we may consider more proper recall scores by the Logistic regression model followed by the Decision Tree classifier. 
+    </li>
+    <li>
+    Using feature selection it was determined that the most influential feature when it comes to track popularity is the track's genre. Moreover, the "pop" genre seems to be the most determining factor. 
+    </li>
+    <li>
+    Although model optimization was performed via GridSearchCV, the models trained with the default hyper parameters produced better results. Therefore, further hyperparameter tuning may be necessary in 
+future iterations.</li>
+</ul>
+
+
+
 
 #### Next steps
-What suggestions do you have for next steps?
+At this stage of the project we have produced a clean dataset that contains what we believe to be the most relevant features to create a model that can predict with high accuracy if a song has the potential to be a hit. 
+
+As it was found, the most determining factor seems to be the song genre, from which the "pop" genre seems to be the strongest genre among hit songs. However, this dataset provides a rich amount of information about track characteristics, including tempo, key, mode, energy, etc., that we believe are worth exploring aside from song genre. Therefore, as a next step, we'll perform another iteration where the song genre is ignored to see if we can obtain valuable information about the characteristics of hit songs.
+
+Additionally, we will look into validating our model with information obtained from the Billboard music charts since these charts are considered standards in the music industry. 
 
 #### Outline of project
 
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [Main Notebook](https://github.com/marcoantoniogodoy/ucberkeley-mlai-capstone-project/blob/main/CapstoneProject_20.1.ipynb)
 
 
 ##### Contact and Further Information
