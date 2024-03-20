@@ -1,4 +1,4 @@
-# Capstone Project: Let's make hit song!
+# Capstone Project: Let's make a hit song!
 
 By [Marco Antonio Godoy](https://www.linkedin.com/in/marco-antonio-godoy)
 
