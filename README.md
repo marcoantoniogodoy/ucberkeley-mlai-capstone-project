@@ -162,8 +162,7 @@ The following are the resuls of the comparison of the attributes of the hit song
 
 
 ## Outline of project
-
-- [Main Notebook](https://github.com/marcoantoniogodoy/ucberkeley-mlai-capstone-project/blob/main/CapstoneProject_20.1.ipynb)
+- [Main Notebook](https://github.com/marcoantoniogodoy/ucberkeley-mlai-capstone-project/blob/main/CapstoneProject_24.1.ipynb)
 
 
 ## Contact and Further Information
